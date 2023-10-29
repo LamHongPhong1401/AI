@@ -22,9 +22,11 @@ public class TestAStar {
 		f.addEdge(g, 1);
 		e.addEdge(g, 2);
 		
+//		IInformedSearchAlgo aStar = new AStarSearchAlgo();
+//		Node res = aStar.execute(s, g.getLabel());
+//		System.out.println(NodeUtils.printPath(res));
 		IInformedSearchAlgo aStar = new AStarSearchAlgo();
-		Node res = aStar.execute(s, c.getLabel(), g.getLabel());
-		System.out.println(NodeUtils.printPath(res));
+		System.out.println(aStar.isAdmissibleH(s, f.getLabel()));
 
 //		IInformedSearchAlgo greedy = new GreedyBestFirstSearchAlgo();
 //		Node res = greedy.execute(s, "C","G");
