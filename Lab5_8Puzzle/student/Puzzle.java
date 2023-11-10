@@ -188,4 +188,5 @@ public class Puzzle implements  IPuzzleAlgo{
 		return null;
 	}
 
+
 }
