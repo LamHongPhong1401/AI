@@ -1,4 +1,4 @@
-package sa_tsp;
+package AI.Lab6_HillClimbing_SA.sa_tsp;
 
 //https://www.baeldung.com/java-simulated-annealing-for-traveling-salesman
 //other: http://www.theprojectspot.com/tutorial-post/simulated-annealing-algorithm-for-beginners/6

@@ -1,4 +1,4 @@
-package sa_tsp;
+package AI.Lab6_HillClimbing_SA.sa_tsp;
 
 import java.util.ArrayList;
 import java.util.Collections;

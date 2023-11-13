@@ -1,5 +1,4 @@
-package sa_tsp;
-
+package AI.Lab6_HillClimbing_SA.sa_tsp;
 public class SimulatedAnnealing {
 	public static double simulateAnnealing(double startingTemperature, int numberOfIterations, double coolingRate) {
 		System.out.println("Starting SA with temperature: " + startingTemperature + ", # of iterations: "

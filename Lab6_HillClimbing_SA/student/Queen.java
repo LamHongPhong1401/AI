@@ -1,4 +1,4 @@
-package n_queen.student;
+package AI.Lab6_HillClimbing_SA.student;
 
 public class Queen {
 	private int row;
@@ -11,12 +11,16 @@ public class Queen {
 	}
 
 	public void move() {
-		// Enter your code here
+			row++;
+			if(row == Node.N){
+				row = 0;
+			}
 	}
-
 	// check whether this Queen can attack the given Queen (q)
 	public boolean isConflict(Queen q) {
-		// Enter your code here
+		if (this.row == q.row && this.column == q.column && Math.abs(this.row - q.row) == Math.abs(this.column - q.column)) {
+            return true;
+        }
 		return false;
 	}
 
