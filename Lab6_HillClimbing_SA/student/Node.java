@@ -94,7 +94,7 @@ public class Node {
         while(true){
             neighbor = getBestCandidate(current);
             if(current.getH() <= neighbor.getH()){
-            current = neighbor;
+                current = neighbor;
                 return current;
             }
         }
@@ -115,8 +115,18 @@ lay gia tri cao nhat trong current
     }
 
     public Node executeHillClimbingWithRandomRestart(Node initialState) {
-
-        return null;
+        int stepClimbed = 0;
+        int stepClimbedAfterRandomRestart = 0;
+        int randomRestarts = 0;
+        Node current = execute(initialState);
+        while(current.getH() != 0){
+            randomRestarts++;
+             generateBoard();
+             stepClimbedAfterRandomRestart++;
+             current = execute(current);
+             stepClimbed++;
+        }
+        return current;
     }
-
+    
 }
