@@ -51,9 +51,7 @@ public class GA_NQueenAlgo {
     public void mutate(Node node) {
         // Enter your code here
         int rdom = rd.nextInt(Node.N);
-        Queen queen = new Queen(rdom,rdom);
-        queen.setRow(rdom);
-
+        node.getState()[rdom].setRow(rdom);
     }
 
     //Crossover x and y to reproduce a child
